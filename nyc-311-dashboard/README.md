@@ -3,9 +3,9 @@ This project provides a comprehensive data dashboard for visualizing and investi
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Installation](installation)
+- [Usage](usage)
+- [License](license)
 
 ## Installation
 Step-by-step instructions on how to get the development environment running.
@@ -73,6 +73,7 @@ The goal of the dashboard is to allow a city official to evaluate the difference
   cd src
   bokeh serve bokeh_code.py --port 8080
   ```
+The link given by the command line should then be copied into a web browser.
 
 3. **Jupyter notebook:**
 
