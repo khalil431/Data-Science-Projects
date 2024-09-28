@@ -3,9 +3,9 @@ This project provides a comprehensive data dashboard for visualizing and investi
 
 ## Table of Contents
 
-- [Installation](##Installation)
-- [Usage](##Usage)
-- [License](##License)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
 ## Installation
 Step-by-step instructions on how to get the development environment running.
