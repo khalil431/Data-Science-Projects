@@ -3,7 +3,7 @@
 This Git repository is a collection of data science projects that I have completed. Each project is organized to emulate a proper data science structure, consisting of the following directories:
 
 - **data**: The data folder is not included in any of the projects, but should be created when cloning the project. The CSV files used for each project can be found in the README file for each project.
-- **src**: Includes source code files with the core logic and findings of the projects.
+- **src**: Includes source code files with the core logic and findings of the project.
 - **scripts**: Contains scripts that could be imported in the source code files. They are used to help with the core logic of the respective project.
 - **README**: Provides an overview and instructions for each project.
 
