@@ -49,41 +49,42 @@ Step-by-step instructions on how to get the development environment running.
 1. **Command-Line Tools (scripts):**
 
 The `borough_complaints.py` script allows users to investigate complaint types across boroughs within a given date range. It saves the output file in the results folder of the data folder. The help commands for these scripts are also available through the --help flag.
-
-- **Usage example:**
-   ```bash
-   cd scripts
-   python borough_complaints.py -i nyc_311_limit.csv -s 2020-01-01 -e 2020-02-28 -o results-jan-feb.csv
-   python borough_complaints.py -i nyc_311_limit.csv -s 2020-06-01 -e 2020-07-31 -o results-june-july.csv
-   ```
+   
+   - **Usage example:**
+      ```bash
+      cd scripts
+      python borough_complaints.py -i nyc_311_limit.csv -s 2020-01-01 -e 2020-02-28 -o results-jan-feb.csv
+      python borough_complaints.py -i nyc_311_limit.csv -s 2020-06-01 -e 2020-07-31 -o results-june-july.csv
+      ```
 There are too many incidents in 2020 to be able to load and process quickly (at least quickly enough for the dashboard to update quickly). The way to solve this is to pre-process the data using the `calculate_monthly_averages.py` script so that the dashboard is just loading the monthly response-time averages for each zipcode instead of trying to compute the response-time averages when the dashboard updates.
 
-- **Usage example:**
-  ```bash
-   cd scripts
-   python calculate_monthly_averages.py
-   ```
+   - **Usage example:**
+     ```bash
+      cd scripts
+      python calculate_monthly_averages.py
+      ```
 
 2. **Bokeh Dashboard:**
    
 The goal of the dashboard is to allow a city official to evaluate the difference in response time to complaints filed through the 311 service by zipcode. Response time is measured as the amount of time from incident creation to incident closed. It contains two dropdown boxes which can be used to select two different zip codes. The data for the two zipcodes are then plotted on two separate lines and compared to a third line displaying the data for all of 2020. To display the bokeh dashboard, the `calculate_monthly_averages.py` script in the scripts folder needs to be run first. The instructions can be found above.
 
-- **Usage example:**
-  ```bash
-  cd src
-  bokeh serve bokeh_code.py --port 8080
-  ```
+   - **Usage example:**
+     ```bash
+     cd src
+     bokeh serve bokeh_code.py --port 8080
+     ```
+     
 The link given by the command line should then be copied into a web browser.
 
 3. **Jupyter notebook:**
 
 The jupyter notebook allows the user to visualize the number of occurrences of the overall most abundant complaint type over the first 2 months (January and February) of 2020, compared to June and July of 2020. The data is plotted on a bar chart. Before running this step, the `borough_complaints.py` script needs to be run first for two times (one time for January and February, and another time for June and July) to capture the complaint types across boroughs. The instructions can be found in the "command-line tools" section above.
 
-- **Usage example:**
-  ```bash
-  cd src
-  jupyter notebook
-  ```
+   - **Usage example:**
+     ```bash
+     cd src
+     jupyter notebook
+     ```
 
 ## License
 
