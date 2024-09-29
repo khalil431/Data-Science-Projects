@@ -48,7 +48,7 @@ Step-by-step instructions on how to get the development environment running.
 
 1. **Command-Line Tools (scripts):**
 
-The `borough_complaints.py` script allows users to investigate complaint types across boroughs within a given date range. It saves the output file in the results folder of the data folder. The help commands for these scripts are also available through the --help flag.
+   The `borough_complaints.py` script allows users to investigate complaint types across boroughs within a given date range. It saves the output file in the results folder of the data folder. The help commands for these scripts are also available through the --help flag.
    
    - **Usage example:**
       ```bash
@@ -56,7 +56,7 @@ The `borough_complaints.py` script allows users to investigate complaint types a
       python borough_complaints.py -i nyc_311_limit.csv -s 2020-01-01 -e 2020-02-28 -o results-jan-feb.csv
       python borough_complaints.py -i nyc_311_limit.csv -s 2020-06-01 -e 2020-07-31 -o results-june-july.csv
       ```
-There are too many incidents in 2020 to be able to load and process quickly (at least quickly enough for the dashboard to update quickly). The way to solve this is to pre-process the data using the `calculate_monthly_averages.py` script so that the dashboard is just loading the monthly response-time averages for each zipcode instead of trying to compute the response-time averages when the dashboard updates.
+   There are too many incidents in 2020 to be able to load and process quickly (at least quickly enough for the dashboard to update quickly). The way to solve this is to pre-process the data using the `calculate_monthly_averages.py` script so that the dashboard is just loading the monthly response-time averages for each zipcode instead of trying to compute the response-time averages when the dashboard updates.
 
    - **Usage example:**
      ```bash
@@ -66,7 +66,7 @@ There are too many incidents in 2020 to be able to load and process quickly (at 
 
 2. **Bokeh Dashboard:**
    
-The goal of the dashboard is to allow a city official to evaluate the difference in response time to complaints filed through the 311 service by zipcode. Response time is measured as the amount of time from incident creation to incident closed. It contains two dropdown boxes which can be used to select two different zip codes. The data for the two zipcodes are then plotted on two separate lines and compared to a third line displaying the data for all of 2020. To display the bokeh dashboard, the `calculate_monthly_averages.py` script in the scripts folder needs to be run first. The instructions can be found above.
+   The goal of the dashboard is to allow a city official to evaluate the difference in response time to complaints filed through the 311 service by zipcode. Response time is measured as the amount of time    from incident creation to incident closed. It contains two dropdown boxes which can be used to select two different zip codes. The data for the two zipcodes are then plotted on two separate lines and compared to a third line displaying the data for all of 2020. To display the bokeh dashboard, the `calculate_monthly_averages.py` script in the scripts folder needs to be run first. The instructions can be found above.
 
    - **Usage example:**
      ```bash
