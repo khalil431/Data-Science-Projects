@@ -78,7 +78,7 @@ The link given by the command line should then be copied into a web browser.
 
 3. **Jupyter notebook:**
 
-The jupyter notebook allows the user to visualize the number of occurrences of the overall most abundant complaint type over the first 2 months (January and February) of 2020, compared to June and July of 2020. The data is plotted on a bar chart. Before running this step, the `borough_complaints.py` script needs to be run first for two times (one time for January and February, and another time for June and July) to capture the complaint types across boroughs. The instructions can be found in the "command-line tools" section above.
+   The jupyter notebook allows the user to visualize the number of occurrences of the overall most abundant complaint type over the first 2 months (January and February) of 2020, compared to June and July of 2020. The data is plotted on a bar chart. Before running this step, the `borough_complaints.py` script needs to be run first for two times (one time for January and February, and another time for June and July) to capture the complaint types across boroughs. The instructions can be found in the "command-line tools" section above.
 
    - **Usage example:**
      ```bash
