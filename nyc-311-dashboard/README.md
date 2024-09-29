@@ -74,7 +74,7 @@ Step-by-step instructions on how to get the development environment running.
      bokeh serve bokeh_code.py --port 8080
      ```
      
-The link given by the command line should then be copied into a web browser.
+   The link given by the command line should then be copied into a web browser.
 
 3. **Jupyter notebook:**
 
