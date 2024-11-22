@@ -20,7 +20,7 @@ Step-by-step instructions on how to get the development environment running.
 		git clone https://github.com/khalil431/Data-Science-Projects.git
 		```
 	- Alternatively, download the repository ZIP file and extract it.
-   
+
 ## Usage
 
 1. **Fetch Subreddit Data**
