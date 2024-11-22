@@ -1,4 +1,4 @@
-# Reddit Data Analyzer  
+# Reddit Post Analyzer  
 
 A Python-based toolset for scraping Reddit posts, processing text data, and analyzing word frequencies using both a naive technique and TF-IDF implemented from scratch. This project is designed to extract insights from subreddit post titles by creating wordlists and calculating term importance.  
 
@@ -13,7 +13,7 @@ A Python-based toolset for scraping Reddit posts, processing text data, and anal
 ## Installation
 Step-by-step instructions on how to get the development environment running.
 
-- **Clone the Repository**
+1. **Clone the Repository**
 	- Clone the project repository from GitHub.
 		- **Usage example:**
 		```bash
