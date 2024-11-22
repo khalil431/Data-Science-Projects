@@ -14,7 +14,7 @@ A Python-based toolset for scraping Reddit posts, processing text data, and anal
 Step-by-step instructions on how to get the development environment running.
 
 - **Clone the Repository**
-	- Clone the project repository from GitHub:
+	- Clone the project repository from GitHub.
 		- **Usage example:**
 		```bash
 		git clone https://github.com/khalil431/Data-Science-Projects.git
