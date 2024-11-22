@@ -14,10 +14,10 @@ A Python-based toolset for scraping Reddit posts, processing text data, and anal
 Step-by-step instructions on how to get the development environment running.
 
 1. **Clone the Repository:**
-    - Clone the project repository from GitHub using Visual Studio:
-     ```bash
-     git clone https://github.com/khalil431/Data-Science-Projects.git
-     ```
+    - Clone the project repository from GitHub:
+        ```bash
+        git clone https://github.com/khalil431/Data-Science-Projects.git
+        ```
     - Alternatively, download the repository ZIP file and extract it.
    
 ## Usage
@@ -30,10 +30,10 @@ Step-by-step instructions on how to get the development environment running.
         ```
 
 2. **Build Frequency Wordlists**
-    - Use `build_naive_word_list.py` to compute the top 10 most frequent words from the post titles. This script uses the naive algorithm by computing word frequencies for each subreddit. The help commands for `build_naive_word_list.py` is available through the --help flag. Including the stopword json file is optional. Make sure `collect_jsons.py` has been rune before as the reddit json files are required for this step to run properly.
+    - Use `build_naive_frequent_word_list.py` to compute the top 10 most frequent words from the post titles. This script uses the naive algorithm by computing word frequencies for each subreddit. The help commands for `build_naive_frequent_word_list.py` is available through the --help flag. Including the stopword json file is optional. Make sure `collect_jsons.py` has been rune before as the reddit json files are required for this step to run properly.
         - **Usage example:**
         ```bash
-        python src/build_naive_word_list.py mcgill.json montreal.json programming.json marvel.json mylittlepony.json 3Dprinting.json -o naive_wordlist.json -s stopwords/stop_words_english.json
+        python src/build_naive_frequent_word_list.py mcgill.json montreal.json programming.json marvel.json mylittlepony.json 3Dprinting.json -o naive_wordlist.json -s stopwords/stop_words_english.json
         ```
 
 3. **Build TF-IDF Wordlists**
