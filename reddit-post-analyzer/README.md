@@ -15,7 +15,7 @@ Step-by-step instructions on how to get the development environment running.
 
 1. **Clone the Repository**
 	- Clone the project repository from GitHub:
-        - **Usage example:**
+    	- **Usage example:**
         ```bash
         git clone https://github.com/khalil431/Data-Science-Projects.git
         ```
@@ -24,12 +24,12 @@ Step-by-step instructions on how to get the development environment running.
 ## Usage
 
 1. **Fetch Subreddit Data**
-	- Use `collect_jsons.py` to scrape posts from subreddits and save them to JSON files. This script scrapes posts from r/mcgill, r/montreal, r/programming, r/marvel, r/mylittlepony, and r/3Dprinting by default.
-        - **Usage example:**
+	- Use `collect_jsons.py` to scrape posts from subreddits and save them to JSON files. This script scrapes posts from r/mcgill, r/montreal, r/programming, r/marvel, r/mylittlepony, and r/3Dprinting
+    	- **Usage example:**
         ```bash
         python scripts/collect_jsons.py
         ```
-
+        
 2. **Build Frequency Wordlists**
     - Use `build_naive_frequent_word_list.py` to compute the top 10 most frequent words from the post titles. This script uses the naive algorithm by computing word frequencies for each subreddit. The help commands for `build_naive_frequent_word_list.py` is available through the --help flag. Including the stopword json file is optional. Make sure `collect_jsons.py` has been rune before as the reddit json files are required for this step to run properly.
         - **Usage example:**
