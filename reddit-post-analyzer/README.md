@@ -24,7 +24,7 @@ Step-by-step instructions on how to get the development environment running.
 ## Usage
 
 1. **Fetch Subreddit Data**
-    - Use `collect_jsons.py` to scrape posts from subreddits and save them to JSON files. This script scrapes posts from r/mcgill, r/montreal, r/programming, r/marvel, r/mylittlepony, and r/3Dprinting by default.
+	- Use `collect_jsons.py` to scrape posts from subreddits and save them to JSON files. This script scrapes posts from r/mcgill, r/montreal, r/programming, r/marvel, r/mylittlepony, and r/3Dprinting by default.
         - **Usage example:**
         ```bash
         python scripts/collect_jsons.py
